@@ -640,10 +640,11 @@ class DeleteAWSEncryptionKey(S3Command):
             else:
                 i = raw_input("You are about to delete {0} and all its versions.\nAre you sure? [N/y]: "
                               .format(self.args.key_name)) or 'n'
-                if i.lower() == 'n':
+                
+                if i.isalpha() and i.lower() == 'n':
                     print("No action taken.")
                     return False
-                elif i.lower() == 'y':
+                elif i.isalpha() and i.lower() == 'y':
                     self.delete_key_and_versions()
                 else:
                     raise RuntimeError("Invalid Input.  Valid choices are 'n' or 'y'")
