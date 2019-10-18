@@ -1,4 +1,5 @@
 MESSER
+[![GitHub stars](https://img.shields.io/github/stars/adobe/messer.svg?style=social&label=Star&maxAge=2592000)](https://github.com/adobe/messer/stargazers/)
 =====================================
 
 Messer is a command line tool that was initially designed to be used as a replacement for chef's 'knife' tool for
